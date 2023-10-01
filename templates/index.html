@@ -4,16 +4,20 @@
 
 <body>
     <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
+        <form action="" method="POST"> 
+            <input placeholder="Youtube video id" type="text" id="link" name="link"/>
+           
+        </form>
+        <p> {{ link }} </p>
+        <iframe src='https://www.youtube.com/embed/{{ link }}' frameborder='0' 
+        allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in- 
+        picture' allowfullscreen></iframe>
     </div>
+
+    <footer>
+        
+    </footer>
+    
 </body>
 
 </html>
